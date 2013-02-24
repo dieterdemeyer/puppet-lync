@@ -4,8 +4,8 @@
 #
 #   include lync
 class lync {
-  package { 'Lync':
-    provider => 'apple',
-    source   => 'https://yum.cegeka.be/iso/Lync_Mac_2011_MAC_MultiLang.pkg',
+  package { 'Lync_Mac_2011_MAC_MultiLang.pkg.dmg':
+    provider => 'pkgdmg',
+    source   => 'https://yum.cegeka.be/iso/Lync_Mac_2011_MAC_MultiLang.pkg.dmg',
   }
 }
